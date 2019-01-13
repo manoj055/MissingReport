@@ -1,0 +1,91 @@
+<div class="report_form" style="width: 70rem;">
+  <div class="card-body report_form">
+      <%= form_for @person, html: { multipart: true } do |form| %>
+        <% if person.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(person.errors.count, "error") %> prohibited this person from being saved:</h2>
+
+            <ul>
+            <% person.errors.full_messages.each do |message| %>
+              <li><%= message %></li>
+            <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="form-group">
+          <h4>Do you have police report?</h4>
+          <span id="yesCheck" onclick="yesCheck();">
+            <%= form.radio_button :report_status, true %></span> Yes<br />
+
+          <span id="noCheck" onclick="noCheck();">
+            <%= form.radio_button :report_status, false %></span> No<br />
+
+        </div>
+
+        <div class="form-group">
+          <%= form.file_field :image %>
+        </div>
+
+
+        <div class="form-group" id="ifYes" style="display:none">
+          <%= form.label :report_no %>
+          <%= form.text_field :report_no %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :name %>
+          <%= form.text_field :name, id: :person_name, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :nation_id %>
+          <%= form.text_field :nation_id, id: :person_nation_id, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :color %>
+          <%= form.text_field :color, id: :person_color, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :age %>
+          <%= form.number_field :age, id: :person_age, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :address %>
+          <%= form.text_field :address, id: :person_address, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :lost_date %>
+          <%= form.date_field :lost_date, id: :person_lost_date, class:"form-control" %>
+        </div>
+
+        <div class="form-group">
+          <%= form.label :contact %>
+          <%= form.number_field :contact, id: :person_contact, class:"form-control" %>
+        </div>
+
+
+        <div class="form-group">
+          <%= form.label :description %>
+          <%= form.text_field :description, id: :person_description, class:"form-control" %>
+        </div>
+
+        <div class="actions">
+          <%= form.submit "Report a file", class:"btn btn-primary" %>
+        </div>
+      <% end %>
+    </div>
+</div>
+
+<script>
+  function yesCheck() {
+      document.getElementById('ifYes').style.display = 'block';
+  }
+  function noCheck() {
+      document.getElementById('ifYes').style.display = 'none';
+  }
+</script>

@@ -1,0 +1,29 @@
+// Place all the styles related to the contact controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+// .contact{
+//   margin-left: 100px;
+// }
+.coninfo p{
+  font-size: 25px;
+}
+.contact{
+  margin-top: 40px;
+}
+.map{
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+hr {
+    border: none;
+    height: 1px;
+    /* Set the hr color */
+    color: rgb(238, 112, 150); /* old IE */
+    background-color: rgb(25, 89, 230); /* Modern Browsers */
+}
+.contact-container{
+overflow: hidden;
+overflow-x: hidden;
+overflow-y: hidden;
+}

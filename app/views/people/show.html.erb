@@ -1,0 +1,46 @@
+<%= image_tag @person.image.url(:medium) %>
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @person.name %>
+</p>
+
+<p>
+  <strong>Nation:</strong>
+  <%= @person.nation_id %>
+</p>
+
+<p>
+  <strong>Color:</strong>
+  <%= @person.color %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @person.age %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @person.address %>
+</p>
+
+<p>
+  <strong>Lost date:</strong>
+  <%= @person.lost_date %>
+</p>
+<p>
+  <strong>Contact:</strong>
+  <%= @person.contact %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @person.description %>
+</p>
+
+
+<div class="share_link">
+  <%= link_to ' Share', "https://www.facebook.com/sharer/sharer.php?u=www.harayekomanchhe.com"+person_path(@person), class: "fa fa-facebook-official fa-2x" %>
+</div>

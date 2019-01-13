@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="help_us text-center">
+    <% if user_signed_in? %>
+    <center>Welcome <%= current_user.uname %></center>
+    <% end %>
+  </div>
+<br>
+
+    <h2 class="text-center">Help Us Find</h2>
+    <h3 class="text-center">Reported Person</h3>
+    <div class="row">
+        <% @posts.each do |person| %>
+          <% if !@reports.find_by(report_no: person.report_no).nil? %>
+          <div class="col-sm-6 col-md-4">
+            <div class="image">
+              <%= link_to (image_tag person.image.url(:medium), class: 'img-circular'), person %> <br>
+              <div class="col-xs-12 center-block">
+                <div class="text-uppercase">
+                  <%= person.name %>
+                </div>
+             </div>
+            </div>
+          </div>
+          <% end %>
+        <% end %>
+    </div>
+
+    <h3 class="text-center">Unreported person</h3>
+    <div class="row">
+        <% @posts.each do |person| %>
+          <% if @reports.find_by(report_no: person.report_no).nil? %>
+          <div class="col-sm-6 col-md-4">
+            <div class="image">
+              <%= link_to (image_tag person.image.url(:medium), class: 'img-circular'), person %> <br>
+              <div class="col-xs-12 center-block">
+                <div class="text-uppercase">
+                  <%= person.name %>
+                </div>
+             </div>
+            </div>
+          </div>
+          <% end %>
+        <% end %>
+    </div>
+</div>

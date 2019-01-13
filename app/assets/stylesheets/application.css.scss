@@ -1,0 +1,65 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require social-share-button
+ *= require font-awesome
+ */
+@import "font-awesome";
+@import "bootstrap";
+
+ section{
+   background-image: image-url('img3.jpeg');
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   width: 100%;
+   color: white;
+ }
+ body{
+   background-color: #f3f3f3;
+ }
+ .card{
+   margin-top: 10px;
+   margin-bottom: 10px;
+ }
+.subname{
+  text-align: center;
+  color: #7D8CC4;
+
+}
+.name{
+  color:#084887;
+  text-align: center;
+  font: italic bold 100px Georgia, Serif;
+text-shadow: -2px 1px 0 #3a50d9, -5px 2px 0 #0a0e27;
+
+}
+.navbar{
+  background-color: #005377;
+}
+.log_in , .sign_up {
+  margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        margin-top:100px;
+}
+.report_form{
+  margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+        margin-top:10px;
+}
+
+.uname{
+  color: white;
+}

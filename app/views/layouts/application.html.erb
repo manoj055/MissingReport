@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Missing Person Report</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+<%= render 'layouts/bigpic' %>
+<%= render 'layouts/header' %>
+
+<div class="home">
+  <% flash.each do |name, msg| %>
+    <%=content_tag(:div, msg, class: "alert alert-info")%>
+    <% end %>
+  <%= yield %>
+</div>
+<!-- Footer -->
+    <footer class="fixed-btm">
+
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2019 Copyright: Missing Person Report
+      </div>
+      <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+<!-- </div> -->
+
+
+  </body>
+</html>

@@ -1,0 +1,20 @@
+@import 'bootstrap';
+.img-circular{
+  width: 250px;
+height: 250px;
+background-size: cover;
+display: block;
+border-radius: 100px;
+-webkit-border-radius: 100px;
+-moz-border-radius: 100px;
+}
+.image{
+  align-items: center;
+}
+.fixed-btm{
+  background-color: rgb(132, 143, 247);
+  // position: fixed;
+  // height: 100px;
+  // bottom: 0;
+  width: 100%;
+}
