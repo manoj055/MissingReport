@@ -18,48 +18,27 @@
 @import "font-awesome";
 @import "bootstrap";
 
- section{
-   background-image: image-url('img3.jpeg');
-   background-repeat: no-repeat;
-   background-size: 100% 100%;
-   width: 100%;
-   color: white;
- }
- body{
-   background-color: #f3f3f3;
- }
- .card{
-   margin-top: 10px;
-   margin-bottom: 10px;
- }
-.subname{
-  text-align: center;
-  color: #7D8CC4;
 
-}
-.name{
-  color:#084887;
-  text-align: center;
-  font: italic bold 100px Georgia, Serif;
-text-shadow: -2px 1px 0 #3a50d9, -5px 2px 0 #0a0e27;
+  nav.sticky-top a{
+    color: white;
+    font-family: cambria;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  nav.sticky-top a:hover{
+    color: white;
+    background-color: black;
+    font-family: cambria;
+    font-weight: bold;
+  }
+  .uname a{
+    font-family:cambria;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+  }
 
-}
-.navbar{
-  background-color: #005377;
-}
-.log_in , .sign_up {
-  margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        margin-top:100px;
-}
-.report_form{
-  margin: 0 auto; /* Added */
-        float: none; /* Added */
-        margin-bottom: 10px; /* Added */
-        margin-top:10px;
-}
-
-.uname{
-  color: white;
-}
+  .py-3{
+  font-family: cambria;
+    font-size: 17px;
+  }

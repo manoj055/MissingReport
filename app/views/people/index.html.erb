@@ -1,45 +1,50 @@
-<div class="container">
-  <div class="help_us text-center">
-    <% if user_signed_in? %>
-    <center>Welcome <%= current_user.uname %></center>
-    <% end %>
-  </div>
-<br>
 
-    <h2 class="text-center">Help Us Find</h2>
-    <h3 class="text-center">Reported Person</h3>
-    <div class="row">
-        <% @posts.each do |person| %>
-          <% if !@reports.find_by(report_no: person.report_no).nil? %>
-          <div class="col-sm-6 col-md-4">
-            <div class="image">
-              <%= link_to (image_tag person.image.url(:medium), class: 'img-circular'), person %> <br>
-              <div class="col-xs-12 center-block">
-                <div class="text-uppercase">
-                  <%= person.name %>
+      <div class="team">
+         <h1 class="text-center">MISSING PERSONS</h1>
+        <div class="container">
+      <div class="row text-center">
+          
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+                <img class="img-rounded" alt="team-photo" src="https://scontent.fktm10-1.fna.fbcdn.net/v/t1.0-9/31433027_591542691208478_2169499976832614969_n.jpg?_nc_cat=108&_nc_ht=scontent.fktm10-1.fna&oh=6635469e012dbc93c2360fc7c9f0f7d1&oe=5CC3EDC6" height="240px" width="100%"> 
+                
+                <div class="team-member">
+                        
+                <h4>Bikash Subedi</h4>
+                
+                <p>2019/01/02</p>
+                        
                 </div>
-             </div>
-            </div>
-          </div>
-          <% end %>
-        <% end %>
-    </div>
+                                   
+         </div> <!--col-lg-4 -->
+            
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+                <img class="img-rounded" alt="team-photo" src="https://images.pexels.com/photos/428333/pexels-photo-428333.jpeg?h=350&auto=compress&cs=tinysrgb" width="100%">
+                
+                <div class="team-member">
+                        
+                <h4>Hari Sharma</h4>
+                
+                <p>2018/12/18</p>
+                        
+                </div>
+                            
+         </div> <!--col-lg-4 -->
+            
+         <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+               
+                <img class="img-rounded" alt="team-photo" src="https://images.pexels.com/photos/295821/pexels-photo-295821.jpeg?h=350&auto=compress&cs=tinysrgb" width="100%"> 
+                
+                <div class="team-member">
+                        
+                <h4>Nikita Sharma</h4>
+                
+                <p>2019/01/02</p>
+                        
+                </div>
 
-    <h3 class="text-center">Unreported person</h3>
-    <div class="row">
-        <% @posts.each do |person| %>
-          <% if @reports.find_by(report_no: person.report_no).nil? %>
-          <div class="col-sm-6 col-md-4">
-            <div class="image">
-              <%= link_to (image_tag person.image.url(:medium), class: 'img-circular'), person %> <br>
-              <div class="col-xs-12 center-block">
-                <div class="text-uppercase">
-                  <%= person.name %>
-                </div>
-             </div>
-            </div>
-          </div>
-          <% end %>
-        <% end %>
-    </div>
-</div>
+                                          
+            </div> <!-- col-lg-4 -->
+                   
+      </div>  <!-- row text-center -->

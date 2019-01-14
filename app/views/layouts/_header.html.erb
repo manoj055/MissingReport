@@ -1,7 +1,6 @@
-
-<nav class="navbar navbar-expand-sm  sticky-top">
-      <a class="navbar-brand"><%= link_to "Missing Person Report",people_path %> </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-sm  sticky-top bg-dark nav-dark">
+      <a class="navbar-brand"><%= link_to "MISSING PERSON REPORT",people_path %> </a>
+      <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
@@ -28,18 +27,17 @@
           </li>
           <% if !user_signed_in? %>
           <li class="nav-item">
-            <a class="nav-link_sign_out" href="#"><%= link_to('Login', new_user_session_path,class: "btn")  %></a>
+            <a class="nav-link_sign_out" href="#"><%= link_to('Login', new_user_session_path,class: "btn btn-success")  %></a>
           </li>
           <% else %>
           <li class="nav-item">
-          <a class="nav-link_sign_out" href="#"><%= link_to('Logout', destroy_user_session_path, method: :delete,class: "btn")  %>  </a>
+          <a class="nav-link_sign_out" href="#"><%= link_to('Logout', destroy_user_session_path, method: :delete,class: "btn btn-danger")  %>  </a>
           </li>
           <% end %>
           
             <div class="uname text-center">
             <% if user_signed_in? %>
-            <center>Welcome</center>
-            <center><%= current_user.uname %></center>
+            <a href="#" class="btn btn-info">Welcome: <%= current_user.uname %></a>
             <% end %>
           </div>
         </ul>

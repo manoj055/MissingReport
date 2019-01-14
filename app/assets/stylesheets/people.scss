@@ -1,3 +1,33 @@
 // Place all the styles related to the People controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.team h1{
+	font-family:cambria;
+	font-size: 28px;
+	font-weight:bold;
+}
+.team h4 {
+    margin-top: 20px;
+	font-family:cambria;
+	font-size: 23px;
+	font-weight:bold;
+}
+.ion-minus{
+    padding:0px 10px;
+}
+
+.team{
+  background-color:#f6f6f6;
+  padding:60px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+
+.team .fa{
+    color: #5db4c0;
+    font-size: 18px;
+    margin-top: 10px;
+    padding: 3px;
+}

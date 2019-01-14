@@ -39,5 +39,6 @@ gem 'bcrypt'
 gem 'bootstrap', '~> 4.1.3'
 gem 'contact_us', '~> 1.0.1'
 gem 'jquery-rails'
+gem 'wdm', '>= 0.1.0'
 
 gem 'pry-rails', :group => :development
