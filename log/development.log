@@ -2643,3 +2643,439 @@ Processing by PeopleController#index as HTML
 Completed 200 OK in 10977ms (Views: 10823.9ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:08:32 +0545
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (18.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 11272ms (Views: 11060.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 18:11:12 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1110.9ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 2562ms (Views: 2426.2ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2019-01-15 18:11:18 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 759ms (Views: 722.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-01-15 18:11:26 +0545
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 793ms (Views: 738.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2019-01-15 18:11:29 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 779ms (Views: 729.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2019-01-15 18:11:32 +0545
+Processing by ServicesController#index as HTML
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 794ms (Views: 761.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-01-15 18:11:35 +0545
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 896ms (Views: 799.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2019-01-15 18:11:47 +0545
+Processing by PeopleController#new as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 18:11:47 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1034ms (Views: 1031.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-15 18:11:56 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mp6efW5yBZos7H+sIO1SL9xA+t3BkR04hnMVII2qF1J9IXiy4lNUlONkANudnLiNPc0cQd01swEygPO+dfLvLA==", "user"=>{"email"=>"manoj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "manoj@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 50ms (ActiveRecord: 1.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mp6efW5yBZos7H+sIO1SL9xA+t3BkR04hnMVII2qF1J9IXiy4lNUlONkANudnLiNPc0cQd01swEygPO+dfLvLA==", "user"=>{"email"=>"manoj@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1382ms (Views: 1062.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-15 18:12:10 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8aZ2d5xvcIOys/HvsDPNAf0wxRQPyZpZyTkNGBrXG8b+3mTE1egsfaR/kqMzEGOC0EeFqdvGCdr1ffNyCShA3w==", "user"=>{"email"=>"subedibgl2055@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "subedibgl2055@gmail.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 236ms (ActiveRecord: 0.0ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8aZ2d5xvcIOys/HvsDPNAf0wxRQPyZpZyTkNGBrXG8b+3mTE1egsfaR/kqMzEGOC0EeFqdvGCdr1ffNyCShA3w==", "user"=>{"email"=>"subedibgl2055@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1171ms (Views: 999.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-15 18:12:18 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o3zqKwEqbrXGFTBGhdExXxQE5qUDmJwR8Eyan4MgbYGsBPiYSK0yS9DZUwoG8p/cOXOmGNeXD5LMCGT1kN82mA==", "user"=>{"email"=>"subedibgl2055@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "subedibgl2055@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-01-15 12:27:18.647046"], ["last_sign_in_at", "2019-01-14 07:33:34.748913"], ["sign_in_count", 6], ["updated_at", "2019-01-15 12:27:18.650024"], ["id", 1]]
+  [1m[35m (76.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/people/new
+Completed 302 Found in 1525ms (ActiveRecord: 78.7ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2019-01-15 18:12:20 +0545
+Processing by PeopleController#new as HTML
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (543.1ms)
+  Rendered people/new.html.erb within layouts/application (649.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 1898ms (Views: 1580.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/people/new" for 127.0.0.1 at 2019-01-15 18:12:27 +0545
+Processing by PeopleController#new as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering people/new.html.erb within layouts/application
+  Rendered people/_form.html.erb (7.0ms)
+  Rendered people/new.html.erb within layouts/application (44.0ms)
+  Rendered layouts/_header.html.erb (1.0ms)
+Completed 200 OK in 830ms (Views: 785.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2019-01-15 18:12:33 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 760ms (Views: 722.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-01-15 18:12:42 +0545
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 797ms (Views: 763.6ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-15 18:12:45 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OpQqbvEC2F1FjAxFV1kiap5bUTOahr3SpUXhp5yChsxPU3na0AbN6r6ty4QtDL1gGTiH155xFu51SUsmx04How=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (1.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 76ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 18:12:45 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 786ms (Views: 743.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 20:24:39 +0545
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (6.0ms)
+  Rendered layouts/_header.html.erb (7.0ms)
+Completed 200 OK in 2004ms (Views: 1912.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 20:43:43 +0545
+Processing by Devise::SessionsController#new as HTML
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 20:43:43 +0545
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 20:43:43 +0545
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 20:43:43 +0545
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 20:43:43 +0545
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1317.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1295.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1335.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1305.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (1270.6ms)
+Completed 500 Internal Server Error in 5212ms (ActiveRecord: 3.0ms)
+
+
+Completed 500 Internal Server Error in 5193ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 5180ms (ActiveRecord: 0.0ms)
+
+
+Completed 500 Internal Server Error in 5055ms (ActiveRecord: 0.0ms)
+
+
+  
+  
+  
+  
+ActionView::Template::Error (Permission denied @ utime_failed - C:/Sites/MissingPersonReport/tmp/cache/assets/sprockets/v3.0/Ym/YmiVOfSGpgQjZDv8M9bFSeW6qi5JvgNT1AYXFFVRzcs.cache):
+ActionView::Template::Error (Permission denied @ utime_failed - C:/Sites/MissingPersonReport/tmp/cache/assets/sprockets/v3.0/Ym/YmiVOfSGpgQjZDv8M9bFSeW6qi5JvgNT1AYXFFVRzcs.cache):
+ActionView::Template::Error (Permission denied @ utime_failed - C:/Sites/MissingPersonReport/tmp/cache/assets/sprockets/v3.0/Ym/YmiVOfSGpgQjZDv8M9bFSeW6qi5JvgNT1AYXFFVRzcs.cache):
+ActionView::Template::Error (Permission denied @ utime_failed - C:/Sites/MissingPersonReport/tmp/cache/assets/sprockets/v3.0/Ym/YmiVOfSGpgQjZDv8M9bFSeW6qi5JvgNT1AYXFFVRzcs.cache):
+    4:     <title>Missing Person Report</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+    4:     <title>Missing Person Report</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+    4:     <title>Missing Person Report</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+    4:     <title>Missing Person Report</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+  
+  
+  
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__997121846_106755540'
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__997121846_106755540'
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__997121846_106755540'
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__997121846_106755540'
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 6478ms (Views: 6476.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 20:43:51 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (3.0ms)
+Completed 200 OK in 1411ms (Views: 1333.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2019-01-15 20:45:48 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 918ms (Views: 869.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 21:02:25 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (7.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 1226ms (Views: 1223.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 21:03:54 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (917.5ms)
+Completed 500 Internal Server Error in 1644ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `confirmation_url' for #<#<Class:0xcbfc9e8>:0xd3a34f0>):
+    32:       </div>
+    33:       <div class="action">
+    34:         <h6>Not a user?? <%= link_to 'Sign Up', new_user_registration_path, class:"btn btn-primary" %></h6>
+    35: <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    36:       </div>
+    37:     <% end %>
+    38: 
+  
+app/views/devise/sessions/new.html.erb:35:in `block in _app_views_devise_sessions_new_html_erb__748031947_110957496'
+app/views/devise/sessions/new.html.erb:12:in `_app_views_devise_sessions_new_html_erb__748031947_110957496'
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 21:04:27 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (1007.9ms)
+Completed 500 Internal Server Error in 1727ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `confirmation_url' for #<#<Class:0xcbfc9e8>:0xe199d38>):
+    32:       </div>
+    33:       <div class="action">
+    34:         <h6>Not a user?? <%= link_to 'Sign Up', new_user_registration_path, class:"btn btn-primary" %></h6>
+    35:         <p><%= link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token) %></p>
+    36:       </div>
+    37:     <% end %>
+    38: 
+  
+app/views/devise/sessions/new.html.erb:35:in `block in _app_views_devise_sessions_new_html_erb__748031947_118278288'
+app/views/devise/sessions/new.html.erb:12:in `_app_views_devise_sessions_new_html_erb__748031947_118278288'
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-01-15 21:05:09 +0545
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/sessions/new.html.erb within layouts/application (8.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 2333ms (Views: 2329.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-01-15 21:13:06 +0545
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mGgcA1EM8IB4H1AfmbYVMOcDQgsjOMxG1ITZMRW64ZD6U8DWESaD2sk8O0cjiysBpi8N61zF/WC3r0cFHwmPuw==", "user"=>{"email"=>"subedibgl2055@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (331.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "subedibgl2055@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (17.0ms)[0m  [1m[33mUPDATE "users" SET "current_sign_in_at" = ?, "last_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2019-01-15 15:28:08.271420"], ["last_sign_in_at", "2019-01-15 12:27:18.647046"], ["sign_in_count", 7], ["updated_at", "2019-01-15 15:28:08.274418"], ["id", 1]]
+  [1m[35m (94.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 2003ms (ActiveRecord: 442.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:13:09 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 1554ms (Views: 1496.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:14:30 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (6.0ms)
+Completed 200 OK in 1290ms (Views: 1248.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:14:46 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 907ms (Views: 861.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:15:07 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (13.0ms)
+Completed 200 OK in 944ms (Views: 900.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:16:46 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 817ms (Views: 761.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/people" for 127.0.0.1 at 2019-01-15 21:17:23 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 808ms (Views: 771.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-01-15 21:17:27 +0545
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 896ms (Views: 860.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/services" for 127.0.0.1 at 2019-01-15 21:17:30 +0545
+Processing by ServicesController#index as HTML
+  Rendering services/index.html.erb within layouts/application
+  Rendered services/index.html.erb within layouts/application (1.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (5.0ms)
+Completed 200 OK in 802ms (Views: 762.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2019-01-15 21:17:33 +0545
+Processing by ContactController#index as HTML
+  Rendering contact/index.html.erb within layouts/application
+  Rendered contact/index.html.erb within layouts/application (2.0ms)
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered layouts/_header.html.erb (4.0ms)
+Completed 200 OK in 796ms (Views: 759.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-01-15 21:17:41 +0545
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"MYy1FNPwi1hIM/e0zVrugWUgx6w0mexbNT72oXyMg7rw+aghh06EIQnz3mFxOPffPcLd6pGT84iF7iuw3JIf7g=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 91ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-01-15 21:17:41 +0545
+Processing by PeopleController#index as HTML
+  Rendering people/index.html.erb within layouts/application
+  Rendered people/index.html.erb within layouts/application (1.0ms)
+  Rendered layouts/_header.html.erb (2.0ms)
+Completed 200 OK in 882ms (Views: 833.3ms | ActiveRecord: 0.0ms)
+
+
